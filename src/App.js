@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Shield, Terminal, Code, Award, MapPin, Mail, Phone, Github, Linkedin, ChevronRight, Lock, Zap, Database, Network, User, Calendar, Trophy, BookOpen, Briefcase, Star } from 'lucide-react';
+import { Shield, Terminal, Code, Award, MapPin, Mail, Phone, Github, Linkedin, ChevronRight, Lock, Zap, Database, Network, User, Calendar, Trophy, BookOpen, Briefcase, Star, Users } from 'lucide-react'; // Added Users icon
 
 const CyberPortfolio = () => {
   const [currentSection, setCurrentSection] = useState('home');
@@ -57,9 +57,8 @@ const CyberPortfolio = () => {
         date: "March 2024",
         description: "Foundational cybersecurity concepts and online safety.",
         verified: true,
-        // hasQRVerify: true, // Removed as per request
         hasCertificate: true,
-        certificateUrl: "/COC_Intro_CS_cisco.pdf" // Placeholder: Ensure this PDF is in your public folder
+        certificateUrl: "/COC_Intro_CS_cisco.pdf"
       },
       {
         title: "Cybersecurity Essentials",
@@ -67,7 +66,6 @@ const CyberPortfolio = () => {
         date: "May 29, 2024",
         description: "Advanced cybersecurity principles and countermeasures.",
         verified: true,
-        // hasQRVerify: true, // Removed as per request
         hasCertificate: true,
         certificateUrl: "/COC_CS_Essentials_cisco.pdf"
       },
@@ -78,9 +76,8 @@ const CyberPortfolio = () => {
         description: "Completed in 7h 28m - Foundational security concepts.",
         verified: true,
         certificateId: "THM-LXCZEZDXZO",
-        // verifyUrl: "https://tryhackme.com/jr/manikantareddy", // Removed as per request
         hasCertificate: true,
-        certificateUrl: "/tryhackme_THM-LXCZEZDXZO.pdf" // Added as per request
+        certificateUrl: "/tryhackme_THM-LXCZEZDXZO.pdf"
       },
       {
         title: "Fundamentals of Cybersecurity (EDU-102)",
@@ -107,7 +104,7 @@ const CyberPortfolio = () => {
         verified: true,
         certificateId: "NPTEL24CS57S657405335",
         hasCertificate: true,
-        certificateUrl: "/Joy_of_Computing_Python_NPTEL.pdf" // Placeholder: Ensure this PDF is in your public folder
+        certificateUrl: "/Joy_of_Computing_Python_NPTEL.pdf"
       },
       {
         title: "Programming in Modern C++",
@@ -147,11 +144,11 @@ const CyberPortfolio = () => {
         description: "Advanced Python development and automation.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "/codsoft_completion_py.pdf", // Updated as per request
+        certificateUrl: "/codsoft_completion_py.pdf",
         hasOfferLetter: true,
-        offerLetterUrl: "/codsoft_offer_letter_py.pdf", // Updated as per request
+        offerLetterUrl: "/codsoft_offer_letter_py.pdf",
         hasQRVerify: true,
-        verifyUrl: "https://www.codsoft.in/verification" // Updated as per request
+        verifyUrl: "https://www.codsoft.in/verification"
       },
       {
         title: "C++ Programming Internship",
@@ -160,10 +157,10 @@ const CyberPortfolio = () => {
         description: "Systems programming and algorithm optimization.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "/COC_Codsoft_c++.pdf", // Updated as per request
-        hasOfferLetter: false, // Updated as per request
+        certificateUrl: "/COC_Codsoft_c++.pdf",
+        hasOfferLetter: false,
         hasQRVerify: true,
-        verifyUrl: "https://www.codsoft.in/verification" // Updated as per request
+        verifyUrl: "https://www.codsoft.in/verification"
       }
     ],
     workshops: [
@@ -175,7 +172,9 @@ const CyberPortfolio = () => {
         verified: true,
         certificateId: "TB-TINKERERSLAB24-L3-EH-028",
         hasCertificate: true,
-        certificateUrl: "/IIT_Hyderabad_Workshop.jpg"
+        certificateUrl: "/COP_IITHw_cyberninjas.jpg", // Updated certificate path
+        hasGroupPhoto: true, // Added for group photo
+        groupPhotoUrl: "/IIT_Hyderabad_Workshop.jpg" // Path for group photo
       },
       {
         title: "PRASUNETHON Hackathon 2024",
@@ -192,8 +191,8 @@ const CyberPortfolio = () => {
         date: "2024",
         description: "National level programming competition.",
         verified: true,
-        hasCertificate: true, // Added as per request
-        certificateUrl: "/Hackfiniti_hackathon.jpg" // Added as per request
+        hasCertificate: true,
+        certificateUrl: "/Hackfiniti_hackathon.jpg"
       },
       {
         title: "IEEE Quiz Competition - 2nd Prize",
@@ -201,8 +200,8 @@ const CyberPortfolio = () => {
         date: "Dec 2023",
         description: "Acharya Jagadish Chandra Bose Memorial Quiz.",
         verified: true,
-        hasCertificate: true, // Added as per request
-        certificateUrl: "/COP_IEEE_MIT-S_BVRIT.jpg" // Added as per request
+        hasCertificate: true,
+        certificateUrl: "/COP_IEEE_MIT-S_BVRIT.jpg"
       }
     ]
   };
@@ -252,7 +251,7 @@ const CyberPortfolio = () => {
 
   const CertificationCard = ({ cert, index }) => (
     <div
-      className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:scale-105 hover:bg-gray-800/70"
+      className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:bg-gray-800" // Removed hover:scale-105 and simplified hover background
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="flex justify-between items-start mb-3">
@@ -283,8 +282,6 @@ const CyberPortfolio = () => {
         )}
 
         {cert.hasQRVerify && (
-          // This button currently does not link to anything. You might want to add a modal
-          // to display the QR code image or a link to a page explaining QR verification.
           <button className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-blue-500/30 transition-colors flex items-center space-x-1">
             <span className="text-xs">📱</span>
             <span>QR Verify</span>
@@ -312,6 +309,18 @@ const CyberPortfolio = () => {
           >
             <Mail className="w-3 h-3" />
             <span>Offer Letter</span>
+          </a>
+        )}
+
+        {cert.hasGroupPhoto && cert.groupPhotoUrl && (
+          <a
+            href={cert.groupPhotoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-yellow-500/20 text-yellow-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-yellow-500/30 transition-colors flex items-center space-x-1"
+          >
+            <Users className="w-3 h-3" />
+            <span>Group Photo</span>
           </a>
         )}
       </div>
