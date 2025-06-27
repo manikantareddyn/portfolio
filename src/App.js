@@ -49,7 +49,7 @@ const CyberPortfolio = () => {
         description: "8-course specialization covering SIEM, IDS, Python automation. Competent in beginner-level Python, Linux, SQL, SIEM tools, and IDS.",
         verified: true,
         verifyUrl: "https://coursera.org/verify/professional-cert/N883D5NUXN9N",
-        hasCertificate: false // Updated as per your request
+        hasCertificate: false
       },
       {
         title: "Introduction to Cybersecurity",
@@ -57,7 +57,7 @@ const CyberPortfolio = () => {
         date: "March 2024",
         description: "Foundational cybersecurity concepts and online safety.",
         verified: true,
-        hasQRVerify: true,
+        // hasQRVerify: true, // Removed as per request
         hasCertificate: true,
         certificateUrl: "/COC_Intro_CS_cisco.pdf" // Placeholder: Ensure this PDF is in your public folder
       },
@@ -67,7 +67,7 @@ const CyberPortfolio = () => {
         date: "May 29, 2024",
         description: "Advanced cybersecurity principles and countermeasures.",
         verified: true,
-        hasQRVerify: true,
+        // hasQRVerify: true, // Removed as per request
         hasCertificate: true,
         certificateUrl: "/COC_CS_Essentials_cisco.pdf"
       },
@@ -78,7 +78,9 @@ const CyberPortfolio = () => {
         description: "Completed in 7h 28m - Foundational security concepts.",
         verified: true,
         certificateId: "THM-LXCZEZDXZO",
-        verifyUrl: "https://tryhackme.com/jr/manikantareddy"
+        // verifyUrl: "https://tryhackme.com/jr/manikantareddy", // Removed as per request
+        hasCertificate: true,
+        certificateUrl: "/tryhackme_THM-LXCZEZDXZO.pdf" // Added as per request
       },
       {
         title: "Fundamentals of Cybersecurity (EDU-102)",
@@ -87,7 +89,7 @@ const CyberPortfolio = () => {
         description: "Valid until June 21, 2027 - Enterprise security fundamentals.",
         verified: true,
         verifyUrl: "https://verify.skilljar.com/c/7snge9qz9oum",
-        hasCertificate: false // Updated as per your request
+        hasCertificate: false
       },
       {
         title: "ZTCA - Zscaler Zero Trust Cyber Associate",
@@ -145,10 +147,11 @@ const CyberPortfolio = () => {
         description: "Advanced Python development and automation.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "#", // Placeholder: Add your Codsoft Python certificate PDF here
+        certificateUrl: "/codsoft_completion_py.pdf", // Updated as per request
         hasOfferLetter: true,
-        offerLetterUrl: "#", // Placeholder for offer letter PDF
-        hasQRVerify: true
+        offerLetterUrl: "/codsoft_offer_letter_py.pdf", // Updated as per request
+        hasQRVerify: true,
+        verifyUrl: "https://www.codsoft.in/verification" // Updated as per request
       },
       {
         title: "C++ Programming Internship",
@@ -157,10 +160,10 @@ const CyberPortfolio = () => {
         description: "Systems programming and algorithm optimization.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "#", // Placeholder: Add your Codsoft C++ certificate PDF here
-        hasOfferLetter: true,
-        offerLetterUrl: "#", // Placeholder for offer letter PDF
-        hasQRVerify: true
+        certificateUrl: "/COC_Codsoft_c++.pdf", // Updated as per request
+        hasOfferLetter: false, // Updated as per request
+        hasQRVerify: true,
+        verifyUrl: "https://www.codsoft.in/verification" // Updated as per request
       }
     ],
     workshops: [
@@ -172,7 +175,7 @@ const CyberPortfolio = () => {
         verified: true,
         certificateId: "TB-TINKERERSLAB24-L3-EH-028",
         hasCertificate: true,
-        certificateUrl: "/IIT_Hyderabad_Workshop.jpg" // Corrected path for the renamed image
+        certificateUrl: "/IIT_Hyderabad_Workshop.jpg"
       },
       {
         title: "PRASUNETHON Hackathon 2024",
@@ -188,14 +191,18 @@ const CyberPortfolio = () => {
         issuer: "24-hour Competition",
         date: "2024",
         description: "National level programming competition.",
-        verified: true
+        verified: true,
+        hasCertificate: true, // Added as per request
+        certificateUrl: "/Hackfiniti_hackathon.jpg" // Added as per request
       },
       {
         title: "IEEE Quiz Competition - 2nd Prize",
         issuer: "IEEE MTT-S BVRIT",
         date: "Dec 2023",
         description: "Acharya Jagadish Chandra Bose Memorial Quiz.",
-        verified: true
+        verified: true,
+        hasCertificate: true, // Added as per request
+        certificateUrl: "/COP_IEEE_MIT-S_BVRIT.jpg" // Added as per request
       }
     ]
   };
