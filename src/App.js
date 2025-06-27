@@ -45,12 +45,11 @@ const CyberPortfolio = () => {
       {
         title: "Google Cybersecurity Professional Certificate",
         issuer: "Google/Coursera",
-        date: "Nov 5, 2024", // Adjusted to match certificate
+        date: "Nov 5, 2024",
         description: "8-course specialization covering SIEM, IDS, Python automation. Competent in beginner-level Python, Linux, SQL, SIEM tools, and IDS.",
         verified: true,
         verifyUrl: "https://coursera.org/verify/professional-cert/N883D5NUXN9N",
-        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
-        certificateUrl: "/Google_CS_professional_Cert.pdf" // Placeholder for your PDF path
+        hasCertificate: false // Updated as per your request
       },
       {
         title: "Introduction to Cybersecurity",
@@ -60,17 +59,17 @@ const CyberPortfolio = () => {
         verified: true,
         hasQRVerify: true,
         hasCertificate: true,
-        certificateUrl: "/COC_Intro_CS_cisco.pdf" // Placeholder for this certificate's PDF path
+        certificateUrl: "/COC_Intro_CS_cisco.pdf" // Placeholder: Ensure this PDF is in your public folder
       },
       {
         title: "Cybersecurity Essentials",
         issuer: "Cisco Networking Academy",
-        date: "May 29, 2024", // Adjusted to match certificate
+        date: "May 29, 2024",
         description: "Advanced cybersecurity principles and countermeasures.",
         verified: true,
         hasQRVerify: true,
         hasCertificate: true,
-        certificateUrl: "/COC_CS_Essentials_cisco.pdf" // Placeholder for your PDF path
+        certificateUrl: "/COC_CS_Essentials_cisco.pdf"
       },
       {
         title: "Pre Security Learning Path",
@@ -79,17 +78,16 @@ const CyberPortfolio = () => {
         description: "Completed in 7h 28m - Foundational security concepts.",
         verified: true,
         certificateId: "THM-LXCZEZDXZO",
-        verifyUrl: "https://tryhackme.com/jr/manikantareddy" // Updated to your THM profile
+        verifyUrl: "https://tryhackme.com/jr/manikantareddy"
       },
       {
         title: "Fundamentals of Cybersecurity (EDU-102)",
         issuer: "Zscaler Training",
-        date: "June 21, 2025", // Adjusted to match certificate
+        date: "June 21, 2025",
         description: "Valid until June 21, 2027 - Enterprise security fundamentals.",
         verified: true,
         verifyUrl: "https://verify.skilljar.com/c/7snge9qz9oum",
-        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
-        certificateUrl: "/Fundamentals_of_cybersecurityZscaler.pdf" // Placeholder for your PDF path
+        hasCertificate: false // Updated as per your request
       },
       {
         title: "ZTCA - Zscaler Zero Trust Cyber Associate",
@@ -106,8 +104,8 @@ const CyberPortfolio = () => {
         description: "Scored 71% - Python programming and computational thinking.",
         verified: true,
         certificateId: "NPTEL24CS57S657405335",
-        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
-        certificateUrl: "/Joy_of_Computing_Python_NPTEL.pdf" // Placeholder for your PDF path
+        hasCertificate: true,
+        certificateUrl: "/Joy_of_Computing_Python_NPTEL.pdf" // Placeholder: Ensure this PDF is in your public folder
       },
       {
         title: "Programming in Modern C++",
@@ -116,25 +114,25 @@ const CyberPortfolio = () => {
         description: "Scored 58% - Advanced C++ programming concepts.",
         verified: true,
         certificateId: "NPTEL24CS125S1050206154",
-        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
-        certificateUrl: "/Programming_in_Modern_C++.pdf" // Placeholder for your PDF path
+        hasCertificate: true,
+        certificateUrl: "/Programming_in_Modern_C++.pdf"
       }
     ],
     internships: [
       {
         title: "Cybersecurity Virtual Internship",
         issuer: "Palo Alto Networks (AICTE)",
-        date: "10 weeks (June - August 2024)", // Added duration
+        date: "10 weeks (June - August 2024)",
         description: "Enterprise security solutions and threat analysis.",
         verified: true,
         certificateId: "d2c36de0f87999604913bb8b0dd9ac3f",
         hasCertificate: true,
-        certificateUrl: "/PaloaltoVirtualIntership.pdf" // Link to the provided PDF
+        certificateUrl: "/PaloaltoVirtualIntership.pdf"
       },
       {
         title: "Cyber Security & Digital Forensics",
         issuer: "Cyber Secured India",
-        date: "3 months (March - May 2024)", // Added duration
+        date: "3 months (March - May 2024)",
         description: "Hands-on training in forensics and incident response.",
         verified: true,
         hasOfferLetter: true,
@@ -143,11 +141,11 @@ const CyberPortfolio = () => {
       {
         title: "Python Programming Internship",
         issuer: "Codsoft",
-        date: "1 month (January 2024)", // Added duration
+        date: "1 month (January 2024)",
         description: "Advanced Python development and automation.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "#", // Placeholder for certificate PDF
+        certificateUrl: "#", // Placeholder: Add your Codsoft Python certificate PDF here
         hasOfferLetter: true,
         offerLetterUrl: "#", // Placeholder for offer letter PDF
         hasQRVerify: true
@@ -155,11 +153,11 @@ const CyberPortfolio = () => {
       {
         title: "C++ Programming Internship",
         issuer: "Codsoft",
-        date: "1 month (February 2024)", // Added duration
+        date: "1 month (February 2024)",
         description: "Systems programming and algorithm optimization.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "#", // Placeholder for certificate PDF
+        certificateUrl: "#", // Placeholder: Add your Codsoft C++ certificate PDF here
         hasOfferLetter: true,
         offerLetterUrl: "#", // Placeholder for offer letter PDF
         hasQRVerify: true
@@ -169,21 +167,21 @@ const CyberPortfolio = () => {
       {
         title: "Cyber Ninjas: Ethical Hacking Workshop",
         issuer: "Tinkerer's Lab IIT Hyderabad (Techobytes Technologies)",
-        date: "September 14-15, 2024 (2-day)", // Adjusted and added duration
+        date: "September 14-15, 2024 (2-day)",
         description: "2-day intensive workshop focusing on ethical hacking techniques and cybersecurity. Certificate ID: TB-TINKERERSLAB24-L3-EH-028.",
         verified: true,
         certificateId: "TB-TINKERERSLAB24-L3-EH-028",
         hasCertificate: true,
-        certificateUrl: "/IIT_Hyderabad_Workshop.jpg" // Assuming you host this image and provide a public path
+        certificateUrl: "/IIT_Hyderabad_Workshop.jpg" // Corrected path for the renamed image
       },
       {
         title: "PRASUNETHON Hackathon 2024",
         issuer: "48-hour National Hackathon",
-        date: "June 29-30, 2024", // Added specific dates
+        date: "June 29-30, 2024",
         description: "Innovative solutions development competition. Participated for 48 hours.",
         verified: true,
         hasCertificate: true,
-        certificateUrl: "/prasunethon.pdf" // Link to the provided PDF
+        certificateUrl: "/prasunethon.pdf"
       },
       {
         title: "Hackfiniti National Hackathon",
@@ -215,7 +213,7 @@ const CyberPortfolio = () => {
   const NavButton = ({ id, icon, label, active }) => (
     <button
       onClick={() => setCurrentSection(id)}
-      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors duration-200 
+      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors duration-200
         ${active
           ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50'
           : 'text-gray-400 hover:text-cyan-400 hover:bg-cyan-500/10'
@@ -323,7 +321,7 @@ const CyberPortfolio = () => {
               <div className="relative">
                 <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 to-green-400 bg-clip-text text-transparent">
                   {terminalText}
-                  <span className={`${showCursor ? 'opacity-100' : 'opacity-0'} transition-opacity`}>|</span>
+                  <span className={`${showCursor ? 'opacity-100' : 'opacity-0'}`}>|</span>
                 </h1>
               </div>
               <p className="text-xl text-gray-300 max-w-3xl mx-auto">
@@ -372,7 +370,7 @@ const CyberPortfolio = () => {
                 <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">About Me</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux.
+                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux,
                     I'm actively pursuing hands-on experience in ethical hacking, vulnerability assessment, and system security.
                     My interests span Android malware detection, cryptographic attack vectors, and algorithmic design enhanced by predictive techniques.
                   </p>
@@ -384,7 +382,7 @@ const CyberPortfolio = () => {
                     <div>
                       <h4 className="text-white font-semibold">BV Raju Institute of Technology</h4>
                       <p className="text-cyan-300">B.Tech in Information Technology</p>
-                      <p className="text-green-400 text-sm font-mono">CGPA: 8.12 (3 semesters)</p> {/* Updated CGPA */}
+                      <p className="text-green-400 text-sm font-mono">CGPA: 8.12 (3 semesters)</p>
                       <p className="text-gray-400 text-sm">August 2023 - Present | Current: 3rd Year</p>
                     </div>
                     <div>
