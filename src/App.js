@@ -45,135 +45,158 @@ const CyberPortfolio = () => {
       {
         title: "Google Cybersecurity Professional Certificate",
         issuer: "Google/Coursera",
-        date: "Nov 2024",
-        description: "8-course specialization covering SIEM, IDS, Python automation",
+        date: "Nov 5, 2024", // Adjusted to match certificate
+        description: "8-course specialization covering SIEM, IDS, Python automation. Competent in beginner-level Python, Linux, SQL, SIEM tools, and IDS.",
         verified: true,
-        verifyUrl: "https://coursera.org/verify/professional-cert/N883D5NUXN9N"
+        verifyUrl: "https://coursera.org/verify/professional-cert/N883D5NUXN9N",
+        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
+        certificateUrl: "/Google_CS_professional_Cert.pdf" // Placeholder for your PDF path
       },
       {
         title: "Introduction to Cybersecurity",
         issuer: "Cisco Networking Academy",
         date: "March 2024",
-        description: "Foundational cybersecurity concepts and online safety",
+        description: "Foundational cybersecurity concepts and online safety.",
         verified: true,
-        hasQRVerify: true
+        hasQRVerify: true,
+        hasCertificate: true,
+        certificateUrl: "/COC_Intro_CS_cisco.pdf" // Placeholder for this certificate's PDF path
       },
       {
         title: "Cybersecurity Essentials",
         issuer: "Cisco Networking Academy",
-        date: "May 2024",
-        description: "Advanced cybersecurity principles and countermeasures",
+        date: "May 29, 2024", // Adjusted to match certificate
+        description: "Advanced cybersecurity principles and countermeasures.",
         verified: true,
-        hasQRVerify: true
+        hasQRVerify: true,
+        hasCertificate: true,
+        certificateUrl: "/COC_CS_Essentials_cisco.pdf" // Placeholder for your PDF path
       },
       {
         title: "Pre Security Learning Path",
         issuer: "TryHackMe",
         date: "Feb 2025",
-        description: "Completed in 7h 28m - Foundational security concepts",
+        description: "Completed in 7h 28m - Foundational security concepts.",
         verified: true,
-        certificateId: "THM-LXCZEZDXZO"
+        certificateId: "THM-LXCZEZDXZO",
+        verifyUrl: "https://tryhackme.com/jr/manikantareddy" // Updated to your THM profile
       },
       {
         title: "Fundamentals of Cybersecurity (EDU-102)",
         issuer: "Zscaler Training",
-        date: "June 2025",
-        description: "Valid until June 2027 - Enterprise security fundamentals",
+        date: "June 21, 2025", // Adjusted to match certificate
+        description: "Valid until June 21, 2027 - Enterprise security fundamentals.",
         verified: true,
-        verifyUrl: "https://verify.skilljar.com/c/7snge9qz9oum"
+        verifyUrl: "https://verify.skilljar.com/c/7snge9qz9oum",
+        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
+        certificateUrl: "/Fundamentals_of_cybersecurityZscaler.pdf" // Placeholder for your PDF path
       },
       {
         title: "ZTCA - Zscaler Zero Trust Cyber Associate",
         issuer: "Zscaler",
         date: "2024",
-        description: "Zero Trust architecture and cybersecurity principles",
+        description: "Zero Trust architecture and cybersecurity principles.",
         verified: true,
-        verifyUrl: "#"
+        verifyUrl: "#" // Replace with actual verify URL if available
       },
       {
         title: "The Joy of Computing using Python",
         issuer: "NPTEL",
         date: "Jan-Apr 2024",
-        description: "Scored 71% - Python programming and computational thinking",
+        description: "Scored 71% - Python programming and computational thinking.",
         verified: true,
-        certificateId: "NPTEL24CS57S657405335"
+        certificateId: "NPTEL24CS57S657405335",
+        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
+        certificateUrl: "/Joy_of_Computing_Python_NPTEL.pdf" // Placeholder for your PDF path
       },
       {
         title: "Programming in Modern C++",
         issuer: "NPTEL",
         date: "Jul-Oct 2024",
-        description: "Scored 58% - Advanced C++ programming concepts",
+        description: "Scored 58% - Advanced C++ programming concepts.",
         verified: true,
-        certificateId: "NPTEL24CS125S1050206154"
+        certificateId: "NPTEL24CS125S1050206154",
+        hasCertificate: true, // Assuming you want a 'Certificate' button to view the PDF
+        certificateUrl: "/Programming_in_Modern_C++.pdf" // Placeholder for your PDF path
       }
     ],
     internships: [
       {
         title: "Cybersecurity Virtual Internship",
         issuer: "Palo Alto Networks (AICTE)",
-        date: "10 weeks (June - August 2024)",
-        description: "Enterprise security solutions and threat analysis",
+        date: "10 weeks (June - August 2024)", // Added duration
+        description: "Enterprise security solutions and threat analysis.",
         verified: true,
         certificateId: "d2c36de0f87999604913bb8b0dd9ac3f",
-        hasCertificate: true
+        hasCertificate: true,
+        certificateUrl: "/PaloaltoVirtualIntership.pdf" // Link to the provided PDF
       },
       {
         title: "Cyber Security & Digital Forensics",
         issuer: "Cyber Secured India",
-        date: "3 months (March - May 2024)",
-        description: "Hands-on training in forensics and incident response",
+        date: "3 months (March - May 2024)", // Added duration
+        description: "Hands-on training in forensics and incident response.",
         verified: true,
-        hasOfferLetter: true
+        hasOfferLetter: true,
+        offerLetterUrl: "#" // Placeholder for offer letter PDF/image
       },
       {
         title: "Python Programming Internship",
         issuer: "Codsoft",
-        date: "1 month (January 2024)",
-        description: "Advanced Python development and automation",
+        date: "1 month (January 2024)", // Added duration
+        description: "Advanced Python development and automation.",
         verified: true,
         hasCertificate: true,
+        certificateUrl: "#", // Placeholder for certificate PDF
         hasOfferLetter: true,
+        offerLetterUrl: "#", // Placeholder for offer letter PDF
         hasQRVerify: true
       },
       {
         title: "C++ Programming Internship",
         issuer: "Codsoft",
-        date: "1 month (February 2024)",
-        description: "Systems programming and algorithm optimization",
+        date: "1 month (February 2024)", // Added duration
+        description: "Systems programming and algorithm optimization.",
         verified: true,
         hasCertificate: true,
+        certificateUrl: "#", // Placeholder for certificate PDF
         hasOfferLetter: true,
+        offerLetterUrl: "#", // Placeholder for offer letter PDF
         hasQRVerify: true
       }
     ],
     workshops: [
       {
-        title: "Advanced Techo Workshop Series'24",
-        issuer: "Tinkerer's Lab IIT Hyderabad",
-        date: "September 14-15, 2024",
-        description: "Cyber Ninjas: Ethical Hacking - 2-day intensive workshop",
+        title: "Cyber Ninjas: Ethical Hacking Workshop",
+        issuer: "Tinkerer's Lab IIT Hyderabad (Techobytes Technologies)",
+        date: "September 14-15, 2024 (2-day)", // Adjusted and added duration
+        description: "2-day intensive workshop focusing on ethical hacking techniques and cybersecurity. Certificate ID: TB-TINKERERSLAB24-L3-EH-028.",
         verified: true,
-        certificateId: "TB-TINKERERSLAB24-L3-EH-028"
+        certificateId: "TB-TINKERERSLAB24-L3-EH-028",
+        hasCertificate: true,
+        certificateUrl: "/IIT_Hyderabad_Workshop.jpg" // Assuming you host this image and provide a public path
       },
       {
         title: "PRASUNETHON Hackathon 2024",
         issuer: "48-hour National Hackathon",
-        date: "June 2024",
-        description: "Innovative solutions development competition",
-        verified: true
+        date: "June 29-30, 2024", // Added specific dates
+        description: "Innovative solutions development competition. Participated for 48 hours.",
+        verified: true,
+        hasCertificate: true,
+        certificateUrl: "/prasunethon.pdf" // Link to the provided PDF
       },
       {
         title: "Hackfiniti National Hackathon",
         issuer: "24-hour Competition",
         date: "2024",
-        description: "National level programming competition",
+        description: "National level programming competition.",
         verified: true
       },
       {
         title: "IEEE Quiz Competition - 2nd Prize",
         issuer: "IEEE MTT-S BVRIT",
         date: "Dec 2023",
-        description: "Acharya Jagadish Chandra Bose Memorial Quiz",
+        description: "Acharya Jagadish Chandra Bose Memorial Quiz.",
         verified: true
       }
     ]
@@ -192,11 +215,12 @@ const CyberPortfolio = () => {
   const NavButton = ({ id, icon, label, active }) => (
     <button
       onClick={() => setCurrentSection(id)}
-      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors duration-200 ${
-        active 
-          ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50' 
+      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors duration-200 
+        ${active
+          ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50'
           : 'text-gray-400 hover:text-cyan-400 hover:bg-cyan-500/10'
-      }`}
+        }
+      `}
     >
       {icon}
       <span className="font-mono text-sm">{label}</span>
@@ -213,7 +237,7 @@ const CyberPortfolio = () => {
         <span className="text-cyan-400 font-mono">{skill.level}%</span>
       </div>
       <div className="w-full bg-gray-800 rounded-full h-2">
-        <div 
+        <div
           className="bg-gradient-to-r from-cyan-500 to-green-400 h-2 rounded-full transition-all duration-1000 ease-out"
           style={{ width: isLoaded ? `${skill.level}%` : '0%' }}
         ></div>
@@ -222,7 +246,7 @@ const CyberPortfolio = () => {
   );
 
   const CertificationCard = ({ cert, index }) => (
-    <div 
+    <div
       className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:scale-105 hover:bg-gray-800/70"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
@@ -233,16 +257,16 @@ const CyberPortfolio = () => {
       <p className="text-gray-300 font-mono text-sm mb-2">{cert.issuer}</p>
       <p className="text-cyan-300 text-sm mb-3">{cert.date}</p>
       <p className="text-gray-400 text-sm mb-4">{cert.description}</p>
-      
+
       {/* Certificate ID */}
       {cert.certificateId && (
         <p className="text-xs text-gray-500 font-mono mb-3">ID: {cert.certificateId}</p>
       )}
-      
+
       {/* Action Buttons */}
       <div className="flex flex-wrap gap-2">
         {cert.verifyUrl && (
-          <a 
+          <a
             href={cert.verifyUrl}
             target="_blank"
             rel="noopener noreferrer"
@@ -252,26 +276,38 @@ const CyberPortfolio = () => {
             <span>Verify</span>
           </a>
         )}
-        
+
         {cert.hasQRVerify && (
+          // This button currently does not link to anything. You might want to add a modal
+          // to display the QR code image or a link to a page explaining QR verification.
           <button className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-blue-500/30 transition-colors flex items-center space-x-1">
             <span className="text-xs">📱</span>
             <span>QR Verify</span>
           </button>
         )}
-        
-        {cert.hasCertificate && (
-          <button className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-cyan-500/30 transition-colors flex items-center space-x-1">
+
+        {cert.hasCertificate && cert.certificateUrl && (
+          <a
+            href={cert.certificateUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-cyan-500/30 transition-colors flex items-center space-x-1"
+          >
             <Award className="w-3 h-3" />
             <span>Certificate</span>
-          </button>
+          </a>
         )}
-        
-        {cert.hasOfferLetter && (
-          <button className="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-purple-500/30 transition-colors flex items-center space-x-1">
+
+        {cert.hasOfferLetter && cert.offerLetterUrl && (
+          <a
+            href={cert.offerLetterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-purple-500/30 transition-colors flex items-center space-x-1"
+          >
             <Mail className="w-3 h-3" />
             <span>Offer Letter</span>
-          </button>
+          </a>
         )}
       </div>
     </div>
@@ -295,8 +331,8 @@ const CyberPortfolio = () => {
               </p>
               <div className="flex justify-center mb-6">
                 <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-4">
-                  <iframe 
-                    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2855948" 
+                  <iframe
+                    src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2855948"
                     className="border-none rounded-lg"
                     width="400"
                     height="120"
@@ -330,14 +366,14 @@ const CyberPortfolio = () => {
             <h2 className="text-3xl font-bold text-cyan-400 flex items-center mb-8">
               <User className="mr-3" /> User Profile
             </h2>
-            
+
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="space-y-6">
                 <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">About Me</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux. 
-                    I'm actively pursuing hands-on experience in ethical hacking, vulnerability assessment, and system security. 
+                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux.
+                    I'm actively pursuing hands-on experience in ethical hacking, vulnerability assessment, and system security.
                     My interests span Android malware detection, cryptographic attack vectors, and algorithmic design enhanced by predictive techniques.
                   </p>
                 </div>
@@ -348,7 +384,7 @@ const CyberPortfolio = () => {
                     <div>
                       <h4 className="text-white font-semibold">BV Raju Institute of Technology</h4>
                       <p className="text-cyan-300">B.Tech in Information Technology</p>
-                      <p className="text-green-400 text-sm font-mono">CGPA: 8.12 (3 semesters)</p>
+                      <p className="text-green-400 text-sm font-mono">CGPA: 8.12 (3 semesters)</p> {/* Updated CGPA */}
                       <p className="text-gray-400 text-sm">August 2023 - Present | Current: 3rd Year</p>
                     </div>
                     <div>
@@ -383,11 +419,11 @@ const CyberPortfolio = () => {
                     </div>
                     <div className="flex items-center space-x-3">
                       <Linkedin className="w-5 h-5 text-cyan-400" />
-                      <a href="http://bit.ly/3YaqsKr" className="text-cyan-400 hover:text-cyan-300">LinkedIn Profile</a>
+                      <a href="http://bit.ly/3YaqsKr" className="text-cyan-400 hover:text-cyan-300" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
                     </div>
                     <div className="flex items-center space-x-3">
                       <Github className="w-5 h-5 text-cyan-400" />
-                      <a href="https://github.com/manikantareddyn" className="text-cyan-400 hover:text-cyan-300">GitHub Profile</a>
+                      <a href="https://github.com/manikantareddyn" className="text-cyan-400 hover:text-cyan-300" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
                     </div>
                   </div>
                 </div>
@@ -466,9 +502,9 @@ const CyberPortfolio = () => {
                       {project.status}
                     </span>
                   </div>
-                  
+
                   <p className="text-gray-300 mb-4 leading-relaxed">{project.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tech.map((tech, i) => (
                       <span key={i} className="bg-cyan-500/20 text-cyan-400 px-3 py-1 rounded-full text-sm font-mono">
@@ -476,7 +512,7 @@ const CyberPortfolio = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   {project.achievement && (
                     <div className="flex items-center space-x-2 text-green-400">
                       <Star className="w-4 h-4" />
@@ -532,7 +568,7 @@ const CyberPortfolio = () => {
       {/* Footer */}
       <footer className="relative z-10 text-center p-6 border-t border-cyan-500/30 backdrop-blur-sm mt-12">
         <p className="text-gray-400 font-mono">
-          <span className="text-cyan-400">[SECURE CONNECTION ESTABLISHED]</span> 
+          <span className="text-cyan-400">[SECURE CONNECTION ESTABLISHED]</span>
           {' '} © 2025 Manikanta Reddy Nanchary
         </p>
       </footer>
