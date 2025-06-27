@@ -51,12 +51,20 @@ const CyberPortfolio = () => {
         verifyUrl: "https://coursera.org/verify/professional-cert/N883D5NUXN9N"
       },
       {
+        title: "Introduction to Cybersecurity",
+        issuer: "Cisco Networking Academy",
+        date: "March 2024",
+        description: "Foundational cybersecurity concepts and online safety",
+        verified: true,
+        hasQRVerify: true
+      },
+      {
         title: "Cybersecurity Essentials",
         issuer: "Cisco Networking Academy",
         date: "May 2024",
         description: "Advanced cybersecurity principles and countermeasures",
         verified: true,
-        verifyUrl: "#"
+        hasQRVerify: true
       },
       {
         title: "Pre Security Learning Path",
@@ -85,34 +93,34 @@ const CyberPortfolio = () => {
       {
         title: "The Joy of Computing using Python",
         issuer: "NPTEL",
-        date: "2024",
+        date: "Jan-Apr 2024",
         description: "Scored 71% - Python programming and computational thinking",
         verified: true,
-        verifyUrl: "#"
+        certificateId: "NPTEL24CS57S657405335"
       },
       {
         title: "Programming in Modern C++",
         issuer: "NPTEL",
-        date: "2024",
-        description: "Scored 63% - Advanced C++ programming concepts",
+        date: "Jul-Oct 2024",
+        description: "Scored 58% - Advanced C++ programming concepts",
         verified: true,
-        verifyUrl: "#"
+        certificateId: "NPTEL24CS125S1050206154"
       }
     ],
     internships: [
       {
         title: "Cybersecurity Virtual Internship",
         issuer: "Palo Alto Networks (AICTE)",
-        date: "10 weeks",
+        date: "10 weeks (June - August 2024)",
         description: "Enterprise security solutions and threat analysis",
         verified: true,
         certificateId: "d2c36de0f87999604913bb8b0dd9ac3f",
-        hasOfferLetter: true
+        hasCertificate: true
       },
       {
         title: "Cyber Security & Digital Forensics",
         issuer: "Cyber Secured India",
-        date: "3 months",
+        date: "3 months (March - May 2024)",
         description: "Hands-on training in forensics and incident response",
         verified: true,
         hasOfferLetter: true
@@ -120,23 +128,33 @@ const CyberPortfolio = () => {
       {
         title: "Python Programming Internship",
         issuer: "Codsoft",
-        date: "1 month",
+        date: "1 month (January 2024)",
         description: "Advanced Python development and automation",
         verified: true,
         hasCertificate: true,
-        hasOfferLetter: true
+        hasOfferLetter: true,
+        hasQRVerify: true
       },
       {
         title: "C++ Programming Internship",
         issuer: "Codsoft",
-        date: "1 month",
+        date: "1 month (February 2024)",
         description: "Systems programming and algorithm optimization",
         verified: true,
         hasCertificate: true,
-        hasOfferLetter: true
+        hasOfferLetter: true,
+        hasQRVerify: true
       }
     ],
-    competitions: [
+    workshops: [
+      {
+        title: "Advanced Techo Workshop Series'24",
+        issuer: "Tinkerer's Lab IIT Hyderabad",
+        date: "September 14-15, 2024",
+        description: "Cyber Ninjas: Ethical Hacking - 2-day intensive workshop",
+        verified: true,
+        certificateId: "TB-TINKERERSLAB24-L3-EH-028"
+      },
       {
         title: "PRASUNETHON Hackathon 2024",
         issuer: "48-hour National Hackathon",
@@ -174,7 +192,7 @@ const CyberPortfolio = () => {
   const NavButton = ({ id, icon, label, active }) => (
     <button
       onClick={() => setCurrentSection(id)}
-      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-300 ${
+      className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-colors duration-200 ${
         active 
           ? 'bg-cyan-500/20 text-cyan-400 border border-cyan-500/50' 
           : 'text-gray-400 hover:text-cyan-400 hover:bg-cyan-500/10'
@@ -205,7 +223,7 @@ const CyberPortfolio = () => {
 
   const CertificationCard = ({ cert, index }) => (
     <div 
-      className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-all duration-300 hover:scale-105 hover:bg-gray-800/70"
+      className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:scale-105 hover:bg-gray-800/70"
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="flex justify-between items-start mb-3">
@@ -233,6 +251,13 @@ const CyberPortfolio = () => {
             <Shield className="w-3 h-3" />
             <span>Verify</span>
           </a>
+        )}
+        
+        {cert.hasQRVerify && (
+          <button className="bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full text-xs font-mono hover:bg-blue-500/30 transition-colors flex items-center space-x-1">
+            <span className="text-xs">📱</span>
+            <span>QR Verify</span>
+          </button>
         )}
         
         {cert.hasCertificate && (
@@ -289,7 +314,7 @@ const CyberPortfolio = () => {
                 { label: "Hackathons", value: "5+", icon: <Trophy /> },
                 { label: "Projects", value: "Active", icon: <Code /> }
               ].map((stat, i) => (
-                <div key={i} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 text-center hover:border-cyan-400 transition-all duration-300">
+                <div key={i} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 text-center hover:border-cyan-400 transition-colors duration-200">
                   <div className="text-cyan-400 mb-2 flex justify-center">{stat.icon}</div>
                   <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
                   <div className="text-gray-400 text-sm">{stat.label}</div>
@@ -323,6 +348,7 @@ const CyberPortfolio = () => {
                     <div>
                       <h4 className="text-white font-semibold">BV Raju Institute of Technology</h4>
                       <p className="text-cyan-300">B.Tech in Information Technology</p>
+                      <p className="text-green-400 text-sm font-mono">CGPA: 8.12 (3 semesters)</p>
                       <p className="text-gray-400 text-sm">August 2023 - Present | Current: 3rd Year</p>
                     </div>
                     <div>
@@ -410,13 +436,13 @@ const CyberPortfolio = () => {
               </div>
             </div>
 
-            {/* Hackathons & Competitions */}
+            {/* Workshops & Competitions */}
             <div>
               <h3 className="text-2xl font-bold text-white mb-6 flex items-center">
-                <Trophy className="mr-3 text-cyan-400" /> Hackathons & Competitions
+                <Trophy className="mr-3 text-cyan-400" /> Workshops & Competitions
               </h3>
               <div className="grid lg:grid-cols-2 gap-6">
-                {certifications.competitions.map((cert, index) => (
+                {certifications.workshops.map((cert, index) => (
                   <CertificationCard key={index} cert={cert} index={index} />
                 ))}
               </div>
@@ -433,7 +459,7 @@ const CyberPortfolio = () => {
 
             <div className="grid gap-6">
               {projects.map((project, index) => (
-                <div key={index} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-8 hover:border-cyan-400 transition-all duration-300">
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-8 hover:border-cyan-400 transition-colors duration-200">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-2xl font-bold text-cyan-400">{project.title}</h3>
                     <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-mono">
