@@ -4,7 +4,7 @@ import { Shield, Terminal, Code, Award, MapPin, Mail, Phone, Github, Linkedin, C
 const CyberPortfolio = () => {
   const [currentSection, setCurrentSection] = useState('home');
   const [terminalText, setTerminalText] = useState('');
- t [showCursor, setShowCursor] = useState(true);
+ const [showCursor, setShowCursor] = useState(true);
   const [isLoaded, setIsLoaded] = useState(false);
 
   const fullText = "Manikanta Reddy > Cybersecurity Enthusiast";
