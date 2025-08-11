@@ -251,7 +251,7 @@ const CyberPortfolio = () => {
 
   const CertificationCard = ({ cert, index }) => (
     <div
-      className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:bg-gray-800" // Removed backdrop-blur-sm, removed hover:scale-105, simplified hover background
+      className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 hover:border-cyan-400 transition-colors duration-200 hover:bg-gray-800" // Removed hover:scale-105 and simplified hover background
       style={{ animationDelay: `${index * 0.1}s` }}
     >
       <div className="flex justify-between items-start mb-3">
@@ -344,7 +344,7 @@ const CyberPortfolio = () => {
                 B.Tech IT Student | Ethical Hacker | Security Researcher
               </p>
               <div className="flex justify-center mb-6">
-                <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-4"> {/* Removed backdrop-blur-sm */}
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-4">
                   <iframe
                     src="https://tryhackme.com/api/v2/badges/public-profile?userPublicId=2855948"
                     className="border-none rounded-lg"
@@ -364,7 +364,7 @@ const CyberPortfolio = () => {
                 { label: "Hackathons", value: "5+", icon: <Trophy /> },
                 { label: "Projects", value: "Active", icon: <Code /> }
               ].map((stat, i) => (
-                <div key={i} className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6 text-center hover:border-cyan-400 transition-colors duration-200"> {/* Removed backdrop-blur-sm */}
+                <div key={i} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6 text-center hover:border-cyan-400 transition-colors duration-200">
                   <div className="text-cyan-400 mb-2 flex justify-center">{stat.icon}</div>
                   <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
                   <div className="text-gray-400 text-sm">{stat.label}</div>
@@ -383,7 +383,7 @@ const CyberPortfolio = () => {
 
             <div className="grid lg:grid-cols-2 gap-8">
               <div className="space-y-6">
-                <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6"> {/* Removed backdrop-blur-sm */}
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">About Me</h3>
                   <p className="text-gray-300 leading-relaxed">
                     I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux,
@@ -392,7 +392,7 @@ const CyberPortfolio = () => {
                   </p>
                 </div>
 
-                <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6"> {/* Removed backdrop-blur-sm */}
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">Education</h3>
                   <div className="space-y-4">
                     <div>
@@ -416,7 +416,7 @@ const CyberPortfolio = () => {
               </div>
 
               <div className="space-y-6">
-                <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6"> {/* Removed backdrop-blur-sm */}
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">Contact Information</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-3">
@@ -442,7 +442,7 @@ const CyberPortfolio = () => {
                   </div>
                 </div>
 
-                <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6"> {/* Removed backdrop-blur-sm */}
+                <div className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">Skills Matrix</h3>
                   <div className="space-y-4">
                     {skills.map((skill, index) => (
@@ -509,7 +509,7 @@ const CyberPortfolio = () => {
 
             <div className="grid gap-6">
               {projects.map((project, index) => (
-                <div key={index} className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-8 hover:border-cyan-400 transition-colors duration-200"> {/* Removed backdrop-blur-sm */}
+                <div key={index} className="bg-gray-800/50 backdrop-blur-sm border border-cyan-500/30 rounded-lg p-8 hover:border-cyan-400 transition-colors duration-200">
                   <div className="flex justify-between items-start mb-4">
                     <h3 className="text-2xl font-bold text-cyan-400">{project.title}</h3>
                     <span className="bg-green-500/20 text-green-400 px-3 py-1 rounded-full text-sm font-mono">
@@ -565,7 +565,7 @@ const CyberPortfolio = () => {
       </div>
 
       {/* Navigation */}
-      <nav className="relative z-10 p-6 border-b border-cyan-500/30"> {/* Removed backdrop-blur-sm */}
+      <nav className="relative z-10 p-6 border-b border-cyan-500/30 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center gap-4">
           <NavButton id="home" icon={<Terminal />} label="~/home" active={currentSection === 'home'} />
           <NavButton id="about" icon={<User />} label="~/about" active={currentSection === 'about'} />
@@ -580,7 +580,7 @@ const CyberPortfolio = () => {
       </main>
 
       {/* Footer */}
-      <footer className="relative z-10 text-center p-6 border-t border-cyan-500/30 mt-12"> {/* Removed backdrop-blur-sm */}
+      <footer className="relative z-10 text-center p-6 border-t border-cyan-500/30 backdrop-blur-sm mt-12">
         <p className="text-gray-400 font-mono">
           <span className="text-cyan-400">[SECURE CONNECTION ESTABLISHED]</span>
           {' '} © 2025 Manikanta Reddy Nanchary
