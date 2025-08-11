@@ -349,9 +349,7 @@ const CyberPortfolio = () => {
                 <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6">
                   <h3 className="text-xl font-bold text-cyan-400 mb-4">About Me</h3>
                   <p className="text-gray-300 leading-relaxed">
-                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux,
-                    I'm actively pursuing hands-on experience in ethical hacking, vulnerability assessment, and system security.
-                    My interests span Android malware detection, cryptographic attack vectors, and algorithmic design enhanced by predictive techniques.
+                    I am a cybersecurity enthusiast and B.Tech student with a strong foundation in C, C++, Python, and Linux, I'm actively pursuing hands-on experience in ethical hacking, vulnerability assessment, and system security. My interests span Android malware detection, cryptographic attack vectors, and algorithmic design enhanced by predictive techniques.
                   </p>
                 </div>
                 <div className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-6">
