@@ -135,7 +135,7 @@ export default function App() {
       duration: "3 Months (Completed July 2025)",
       focus: "Hands-on cybersecurity and digital forensics fundamentals",
       certificateId: "70692ffc5dd90279",
-      certificateFile: "/certificates/internships/cyber_secured_india_internship.pdf",
+      certificateFile: "/certificates/internships/CyberSecIndiaCert_Completion.pdf",
     },
   ];
 
