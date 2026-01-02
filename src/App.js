@@ -288,12 +288,13 @@ export default function App() {
         {section === "achievements" && (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
-              ["TryHackMe", "Top 4%"],
-              ["Hands-on Labs", "100+ Completed"],
-              ["Garuda Cybersecurity Team", "Core Member"],
+              ["TryHackMe", "Top 4% in rank"],
+              ["Hands-on Labs in TryHackMe and Portswigger", "100+ Completed"],
+              ["Garuda Cybersecurity Team", "Member"],
               ["CTF Challenges", "Multiple Solved"],
               ["Workshops Conducted", "Ethical Hacking"],
               ["CEH Practical", "In Preparation"],
+              ["AWS CTF Top performer with Global Rank 166","Awarded SANS Netwars Course"],
             ].map(([t, v], i) => (
               <div key={i} className="bg-gray-800/50 border border-cyan-500/30 rounded-lg p-4 text-center">
                 <div className="text-white font-semibold">{t}</div>
